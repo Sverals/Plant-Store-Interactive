@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../project.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../main.js"></script>
+    <title>Garden Store</title>
+</head>
+<body>
+<header class="outline" id="logo-header">
+    <div class="company-logo">
+        <img src="../images/small_images/small_logo.PNG" alt="Shirley Good Growing Company logo" width="72" height="72">
+        <div class="logo-text-wrapper">
+            <h1>Shirley Good Growing Co.</h1>
+            <p>Plant nursery and garden supplier</p>
+        </div>
+    </div>
+    <nav>
+        <ul class="no-list-style drop-top">
+            <li><a href="../index.html" class="nav-btn black-box no-underline">Home</a></li>
+            <li class="black-box no-underline fill dropbtn">
+                <div class="hover-wrapper">
+                    <p class="hide-if-phone">Products</p>
+                    <div class="white-arrow down hide-if-phone"></div>
+                    <div id="drop-content">
+                        <ul class="product-links no-list-style">
+                            <li><a href="garden-accessories.html">Garden Accessories</a></li>
+                            <li><a href="./houseplants.html">House Plants</a></li>
+                            <li><a href="./vegetables.html">Vegetables</a></li>
+                            <li><a href="./fruit.html">Fruit</a></li>
+                            <li><a href="./landscaping.html">Landscaping</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="./services.html" class="nav-btn black-box no-underline">Services</a></li>
+            <li><a href="plant-tips.html" class="nav-btn black-box no-underline">Plant Care</a></li>
+            <li><a href="./about.html" class="nav-btn black-box no-underline">About Us</a></li>
+            <li><a href="./contact.html" class="nav-btn black-box no-underline">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <div class="hero-wrapper outline center" id="fruit-hero">
+            <div id="gray-overlay">
+                <h2 class="horizontal-stack">Fruit Products</h2>
+            </div>
+        </div>
+    </section>
+
+    <div id="full-product-container">
+        <div id="inside-product-container">
+            <div class="product-area">
+                <div class="product-header">
+                    <h3>Category Header</h3>
+                </div>
+                <section class="center-content">
+
+
+                    <div class="product-shell">
+                        <div class="arrow-holder left-arrow">
+                            <!--The onclick will scroll the page between first and last products. A more robust solution later can be added with more complex JS-->
+                            <!--This should be automated when JS generates the html, currently the buttons need custom id's-->
+                            <button class="arrow left" aria-label="Left Scroll"
+                                    onclick="document.getElementById('first-category-first-product').scrollIntoView({behavior: 'smooth', block: 'nearest'})"></button>
+                        </div>
+
+
+                        <ul class="product-container no-list-style black-box horizontal-scroll round-edge">
+                            <li class="black-box round-edge" id="first-category-first-product">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge" id="first-category-scroll-right">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline"
+                                     id="first-category-last-product">
+                                <h4>Last Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                        </ul>
+                        <div class="arrow-holder right-arrow reposition-right-arrow">
+                            <!--Nearest will minimize scrolling-->
+                            <button class="arrow right" aria-label="Right Scroll"
+                                    onclick="document.getElementById('first-category-last-product').scrollIntoView({behavior: 'smooth', block: 'nearest'})"></button>
+                        </div>
+                    </div>
+                </section>
+                <div class="product-header">
+                    <h3>Category Header</h3>
+                </div>
+                <section class="center-content">
+                    <div class="product-shell">
+                        <div class="arrow-holder left-arrow">
+                            <!--The onclick will scroll the page between first and last products. A more robust solution later can be added with more complex JS-->
+                            <!--This should be automated when JS generates the html, currently the buttons need custom id's-->
+                            <button class="arrow left" aria-label="Left Scroll"
+                                    onclick="document.getElementById('second-category-first-product').scrollIntoView({behavior: 'smooth', block: 'nearest'})"></button>
+                        </div>
+
+
+                        <ul class="product-container no-list-style black-box horizontal-scroll round-edge">
+                            <li class="black-box round-edge" id="second-category-first-product">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge" id="second-category-scroll-right">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline"
+                                     id="second-category-last-product">
+                                <h4>Last Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                        </ul>
+                        <div class="arrow-holder right-arrow reposition-right-arrow">
+                            <!--Nearest will minimize scrolling-->
+                            <button class="arrow right" aria-label="Right Scroll"
+                                    onclick="document.getElementById('second-category-last-product').scrollIntoView({behavior: 'smooth', block: 'nearest'})"></button>
+                        </div>
+                    </div>
+                </section>
+                <div class="product-header">
+                    <h3>Category Header</h3>
+                </div>
+                <section class="center-content">
+
+
+                    <div class="product-shell">
+                        <div class="arrow-holder left-arrow ">
+                            <!--The onclick will scroll the page between first and last products. A more robust solution later can be added with more complex JS-->
+                            <!--This should be automated when JS generates the html, currently the buttons need custom id's-->
+                            <button class="arrow left" aria-label="Left Scroll"
+                                    onclick="document.getElementById('third-category-first-product').scrollIntoView({behavior: 'smooth', block: 'nearest'})"></button>
+                        </div>
+
+
+                        <ul class="product-container no-list-style black-box horizontal-scroll round-edge">
+                            <li class="black-box round-edge" id="third-category-first-product">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge" id="third-category-scroll-right">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline">
+                                <h4>Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                            <li class="black-box round-edge">
+                                <img src="" alt="" width="275px" height="150px" class="round-edge outline"
+                                     id="third-category-last-product">
+                                <h4>Last Product Name</h4>
+                                <p class="top-margin">Description of product</p>
+                                <p>$49.99</p>
+                            </li>
+                        </ul>
+                        <div class="arrow-holder right-arrow reposition-right-arrow">
+                            <!--Nearest will minimize scrolling-->
+                            <button class="arrow right" aria-label="Right Scroll"
+                                    onclick="document.getElementById('third-category-last-product').scrollIntoView({behavior: 'smooth', block: 'nearest'})"></button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <section class="center">
+        <div class="black-box fun-fact">
+            <h3>Fun Product Facts</h3>
+            <p>Some interesting set of facts about this type of product the consumer might be interested in. Lorem ipsum
+                odor amet, consecteuter elit. Aliquam ut imperdiet vel vivamus, dictumst facilisi quis. Curabitur lectus
+                elitante dictum posuere eu rhoncus venenatis.</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <div id="footer-top">
+        <div class="row logo-with-text">
+            <img src="../images/small_images/footer_logo.PNG" alt="Shirley Good Growing Company logo" height="36"
+                 width="36">
+            <h3>Shirley Good Growing Co.</h3>
+        </div>
+        <div class="gap-flex">
+            <h3>Navigation</h3>
+            <ul class="no-list-style">
+                <li><a href="../index.html" class="no-underline">Home</a></li>
+                <li><a href="./services.html" class="no-underline">Services</a></li>
+                <li><a href="plant-tips.html" class="no-underline">Plant Care</a></li>
+                <li><a href="./about.html" class="no-underline">About us</a></li>
+                <li><a href="./contact.html" class="no-underline">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="gap-flex">
+            <h3>Follow Our Social Media</h3>
+            <ul class="no-list-style">
+                <li class="logo-with-text">
+                    <img src="../images/small_images/footer_blue_sky.png" alt="BlueSky logo." width="36" height="36">
+                    <a href="https://bsky.app/" target="_blank">BlueSky</a>
+                </li>
+                <li class="logo-with-text">
+                    <img src="../images/small_images/footer_facebook_logo.png" alt="Facebook logo." width="36"
+                         height="36">
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                </li>
+                <li class="logo-with-text">
+                    <img src="../images/social_media_logos/Instagram_Glyph_Gradient.svg" alt="Instagram logo."
+                         width="36px" height="36px">
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="gap-flex">
+            <h3>Contact</h3>
+            <address>
+                <div class="contact">
+                    <h4>Phone</h4>
+                    <p>(800)-555-0100</p>
+                    <h4>Email</h4>
+                    <p>ShirleyGGC@example.com</p>
+                </div>
+                <div class="location">
+                    <p>123 Street</p>
+                    <p>City, State 00401</p>
+                </div>
+            </address>
+        </div>
+    </div>
+    <div class="copyright"><p>Shirley Good Growing Co. &copy; 2025</p></div>
+</footer>
+</body>
+</html>

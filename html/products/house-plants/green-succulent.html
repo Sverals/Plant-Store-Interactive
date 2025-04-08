@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../project.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../../../main.js"></script>
+    <title>Garden Store</title>
+</head>
+<body>
+<header class="outline" id="logo-header">
+    <div class="company-logo">
+        <img src="../../../images/small_images/small_logo.PNG" alt="Shirley Good Growing Company logo" width="72"
+             height="72">
+        <div class="logo-text-wrapper">
+            <h1>Shirley Good Growing Co.</h1>
+            <p>Plant nursery and garden supplier</p>
+        </div>
+    </div>
+    <nav>
+        <ul class="no-list-style drop-top">
+            <li><a href="../../../index.html" class="nav-btn black-box no-underline">Home</a></li>
+            <li class="black-box no-underline fill dropbtn">
+                <div class="hover-wrapper">
+                    <p class="hide-if-phone">Products</p>
+                    <div class="white-arrow down hide-if-phone"></div>
+                    <div id="drop-content">
+                        <ul class="product-links no-list-style">
+                            <li><a href="../../garden-accessories.html">Garden Accessories</a></li>
+                            <li><a href="../../houseplants.html">House Plants</a></li>
+                            <li><a href="../../vegetables.html">Vegetables</a></li>
+                            <li><a href="../../fruit.html">Fruit</a></li>
+                            <li><a href="../../landscaping.html">Landscaping</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="../../services.html" class="nav-btn black-box no-underline">Services</a></li>
+            <li><a href="../../plant-tips.html" class="nav-btn black-box no-underline">Plant Care</a></li>
+            <li><a href="../../about.html" class="nav-btn black-box no-underline">About Us</a></li>
+            <li><a href="../../contact.html" class="nav-btn black-box no-underline">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="product-main">
+    <section class="individual-product-container">
+        <div>
+            <img src="../../../images/products/full-succulent.jpg" alt="A tomato plant with a flower at the store"
+                 width="500" height="450">
+        </div>
+        <div class="listing-info">
+            <h2>Green Succulent</h2>
+            <div>
+                <h3>$16.99</h3>
+                <p>Rating: 4.5/5</p>
+                <img src="../../../images/star-vector.svg" alt="" height="20px" width="20px">
+                <img src="../../../images/star-vector.svg" alt="" height="20px" width="20px">
+                <img src="../../../images/star-vector.svg" alt="" height="20px" width="20px">
+                <img src="../../../images/star-vector.svg" alt="" height="20px" width="20px">
+                <img src="../../../images/half-star.svg" alt="" height="20px" width="20px">
+            </div>
+            <div>
+                <form action="" id="purchase-form">
+                    <label for="quantity" id="quantity-label">Quantity</label>
+                    <input type="number" name="quantity" id="quantity" placeholder="0" aria-label="Purchase amount">
+                    <input type="submit" value="Purchase" id="purchase-btn" aria-label="Purchase button">
+                </form>
+            </div>
+            <div>
+                <h3>
+                    Product Information
+                </h3>
+                <p>Put some information about the product here to give information to the user</p>
+            </div>
+        </div>
+    </section>
+    <section id="growing-info">
+        <div class="shrink-phone">
+            <h2>Growing Information</h2>
+            <div class="grow-tab">
+                <h4>Growing Category</h4>
+                <!--Maybe replace meter with javascript as the meter component cannot be styled for all browsers and will use default-->
+                <div>
+                    <img src="" alt="" width="36px" height="36px">
+                    <meter value="20" max="100"></meter>
+                    <img src="" alt="" width="36px" height="36px">
+                </div>
+            </div>
+            <div class="grow-tab">
+                <h4>Growing Category</h4>
+                <div>
+                    <img src="" alt="" width="36px" height="36px">
+                    <meter value="50" max="100"></meter>
+                    <img src="" alt="" width="36px" height="36px">
+                </div>
+            </div>
+            <div class="grow-tab">
+                <h4>Growing Category</h4>
+                <div>
+                    <img src="" alt="" width="36px" height="36px">
+                    <meter value="50" max="100"></meter>
+                    <img src="" alt="" width="36px" height="36px">
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="line-spacer">Some information about growing plants such as the plant likes water Lorem ipsum dolor
+                sit amet,
+                consectetur adipiscing elit. Duis vel diam diam. Nam velit ante, molestie in semper eu, blandit
+                at arcu. Sed ut velit quis ex faucibus faucibus ac sed tellus. Nullam erat diam, facilisis id dui ut,
+                pharetra imperdiet ante. Nulla tempus faucibus dictum. Maecenas sed ultrices arcu. Cras tempus lobortis
+                mattis.
+                Ut faucibus arcu at lectus gravida, non rutrum velit tristique. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit.
+                Nam mollis quam et tortor pulvinar suscipit. Quisque congue turpis ipsum, in vulputate massa dictum
+                eget. Fusce scelerisque
+                feugiat ligula, sed maximus velit congue imperdiet.</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <div id="footer-top">
+        <div class="row logo-with-text">
+            <img src="../../../images/small_images/footer_logo.PNG" alt="Shirley Good Growing Company logo" height="36"
+                 width="36">
+            <h3>Shirley Good Growing Co.</h3>
+        </div>
+        <div class="gap-flex">
+            <h3>Navigation</h3>
+            <ul class="no-list-style">
+                <li><a href="../../../index.html" class="no-underline">Home</a></li>
+                <li><a href="../../services.html" class="no-underline">Services</a></li>
+                <li><a href="../../plant-tips.html" class="no-underline">Plant Care</a></li>
+                <li><a href="../../about.html" class="no-underline">About us</a></li>
+                <li><a href="../../contact.html" class="no-underline">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="gap-flex">
+            <h3>Follow Our Social Media</h3>
+            <ul class="no-list-style">
+                <li class="logo-with-text">
+                    <img src="../../../images/small_images/footer_blue_sky.png" alt="BlueSky logo." width="36"
+                         height="36">
+                    <a href="https://bsky.app/" target="_blank">BlueSky</a>
+                </li>
+                <li class="logo-with-text">
+                    <img src="../../../images/small_images/footer_facebook_logo.png" alt="Facebook logo." width="36"
+                         height="36">
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                </li>
+                <li class="logo-with-text">
+                    <img src="../../../images/social_media_logos/Instagram_Glyph_Gradient.svg" alt="Instagram logo."
+                         width="36px" height="36px">
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="gap-flex">
+            <h3>Contact</h3>
+            <address>
+                <div class="contact">
+                    <h4>Phone</h4>
+                    <p>(800)-555-0100</p>
+                    <h4>Email</h4>
+                    <p>ShirleyGGC@example.com</p>
+                </div>
+                <div class="location">
+                    <p>123 Street</p>
+                    <p>City, State 00401</p>
+                </div>
+            </address>
+        </div>
+    </div>
+    <div class="copyright"><p>Shirley Good Growing Co. &copy; 2025</p></div>
+</footer>
+</body>
+</html>
