@@ -8,7 +8,7 @@ $(document).ready(function() {    //wait for DOM to be ready instead of defering
         addHoverHandlerToImg(element);
     });
     enableHoverForDropdown();
-    disableImageLinkIfScreenSmall(galleryImages);
+    //disableImageLinkIfScreenSmall(galleryImages);
 });
 
 //Hover section, allows a delay after cursor is removed from hover menu, rather than using css with no delay
@@ -26,13 +26,16 @@ function enableHoverForDropdown() {
 }
 
 function addHoverHandlerToImg(image) {
+    let timeOut;
     $(image).off("click"); //removes old click handler
     $(image).hover(function() {
-        runImageFade(image);
-        updateDescriptionFromAlt(image);
-        updateFigureSize(image);
-    }, function() {
 
+        //runImageFade(image);
+        updateDescriptionFromAlt(image);
+       // updateFigureSize(image);
+    }, function() {
+        $("#alt-description").stop();
+        $("#alt-description").css("opacity", 0);
     });
 
 }
@@ -40,9 +43,7 @@ function addHoverHandlerToImg(image) {
 function addClickHandlerToImg(image) {
     $(image).off("mouseenter mouseleave"); //removes hover handler
     $(image).on("click", function() {
-        runImageFade(image);
         updateDescriptionFromAlt(image);
-        updateFigureSize(image);
     })
 }
 function runImageFade(image) {
@@ -51,7 +52,9 @@ function runImageFade(image) {
     $("#gallery-holder figure").animate({opacity: "1"}, "slow"); //animate fade in
 }
 function updateDescriptionFromAlt(image) {
+    $("#alt-description").css("opacity", 0);
     $("#alt-description").text($(image).attr("alt")); //update paragraph with alt text
+    $("#alt-description").animate({opacity: "1"}, 2000);
 }
 
 function updateFigureSize(image) {
@@ -62,7 +65,7 @@ function updateFigureSize(image) {
 
 //swaps from hover to click for gallery.
 function disableImageLinkIfScreenSmall(galleryImages) {
-    if (screen.width <= 800) {
+    if (screen.width <= 1300) {
         $("#gallery-holder a").on("click", function(event) {
             event.preventDefault();
         });

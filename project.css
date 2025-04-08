@@ -815,6 +815,23 @@ figure {
 #gallery-holder a:hover span { position: absolute; top: 16px; left: 320px;
     text-align: center; opacity: 1; }
 
+#gallery-images {
+    position: relative;
+}
+
+#gallery-holder ul li span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+#gallery-holder a:hover span {
+    position: absolute;
+    top: 30px;
+    left: 32px;
+    opacity: 1;
+}
 
 /*Responsive section*/
 /*Converts most flex into column flex boxes*/
